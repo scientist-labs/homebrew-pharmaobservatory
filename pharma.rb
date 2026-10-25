@@ -5,13 +5,13 @@
 class Pharma < Formula
   desc "Command-line client for the biomedical data platform"
   homepage "https://pharmaobservatory.com"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/scientist-labs/pharmaobservatory-cli/releases/download/v0.1.4/pharma_0.1.4_darwin_amd64.tar.gz"
-      sha256 "bc1df728dcdc5568b34819bdefdabdf406dd240260a155163b35509b33053bb1"
+      url "https://github.com/scientist-labs/pharmaobservatory-cli/releases/download/v0.1.5/pharma_0.1.5_darwin_amd64.tar.gz"
+      sha256 "e27b63b72220cd83e2f73467cd372264ff4edd1f1d50484d35388611fac6a9f4"
 
       define_method(:install) do
         bin.install "pharma"
@@ -22,8 +22,8 @@ class Pharma < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/scientist-labs/pharmaobservatory-cli/releases/download/v0.1.4/pharma_0.1.4_darwin_arm64.tar.gz"
-      sha256 "4d2884e171013834f0e4dc53f004952e34d912be5388fd2f3ddf850a15edb9e5"
+      url "https://github.com/scientist-labs/pharmaobservatory-cli/releases/download/v0.1.5/pharma_0.1.5_darwin_arm64.tar.gz"
+      sha256 "c2459d9a6d43d5e0e05dad9ddaa962755e7ef4d1fe5d57cce83cee51a11dfe45"
 
       define_method(:install) do
         bin.install "pharma"
@@ -37,8 +37,8 @@ class Pharma < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/scientist-labs/pharmaobservatory-cli/releases/download/v0.1.4/pharma_0.1.4_linux_amd64.tar.gz"
-      sha256 "380e646ff83b97bd9e071fb97e4eb9718597533f1738dddfb980e74c9b1ada38"
+      url "https://github.com/scientist-labs/pharmaobservatory-cli/releases/download/v0.1.5/pharma_0.1.5_linux_amd64.tar.gz"
+      sha256 "2d44a0cb5869a754c50c7330c038903ccc460f79e6d48c8b19004548dc5fe2f3"
       define_method(:install) do
         bin.install "pharma"
         man1.install Dir["manpages/*.1.gz"]
@@ -48,8 +48,8 @@ class Pharma < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/scientist-labs/pharmaobservatory-cli/releases/download/v0.1.4/pharma_0.1.4_linux_arm64.tar.gz"
-      sha256 "0ff84355defc3a3ff5c3daee514af3fcac0c7bcfcfc1c4ad70751ecd4c54b084"
+      url "https://github.com/scientist-labs/pharmaobservatory-cli/releases/download/v0.1.5/pharma_0.1.5_linux_arm64.tar.gz"
+      sha256 "60ec88158be002d41c5fba691a8fa4e3e9b7189402cc293a39cd16e28a6538ef"
       define_method(:install) do
         bin.install "pharma"
         man1.install Dir["manpages/*.1.gz"]
